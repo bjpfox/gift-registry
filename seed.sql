@@ -25,7 +25,6 @@ INSERT INTO gifts (name, description, price, link) VALUES ('Shaver', 'My old sha
 INSERT INTO gifts (name, description, price, link) VALUES ('Lego', 'Titanic set', '20000', 'http://www.amazon.com');
 INSERT INTO gifts (name, description, price, link) VALUES ('Playstation', 'New playstation', '40000', 'http://www.amazon.com');
 
-
 INSERT INTO gift_lists (name, status) VALUES ('Joe''s 50th!', 'OPEN');
 INSERT INTO gift_lists (name, status) VALUES ('Martin''s 21st bday', 'OPEN');
 

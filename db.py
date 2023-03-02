@@ -27,7 +27,7 @@ def write(query, params=None):
     cur.close()
     conn.close()
 
-def is_sql_query_valid(query, params=None)
+def is_sql_query_valid(query, params=None):
     conn = psycopg2.connect("dbname=gift_registry")
     cur = conn.cursor(cursor_factory=RealDictCursor)
     cur.execute(query, params)

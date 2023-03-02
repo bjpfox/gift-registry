@@ -10,9 +10,6 @@ Birthday List - Home
 
 {% block nav %}
 Nav
-<p>
-    <a href="./view-list">View List</a>
-</p>
 {% endblock nav %}
 
 
@@ -21,6 +18,11 @@ Main
 <p>
 <img src="./static/img/header-gift.png" alt="Image of a gift">
 </p>
+
+{% for gift in gift_list %}
+<p>{{ gift.name }} | {{ gift.description }} | {{ "${:,.2f}".format(gift.price / 100)}} </p>
+{% endfor %}
+
 {% endblock main %}
 
 
